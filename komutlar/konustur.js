@@ -6,6 +6,7 @@ module.exports.run = async (bot, message, args) => { //Kodlarımızı gireceğim
     const yazi = args.join(" ") //Yazımızı, kullanıcının bota yazdırmasını istediği şey olarak ayarlıyoruz.
     if(!yazi) return message.channel.send('Ne yazdırmak istersin koçum?') //Eğer kullanıcı sadece komudu girip, bir şey yazmadıysa bu yazıyı göndersin.
     message.channel.send(yazi) //Yazıyı gönderiyoruz.
+    message.delete();
 }//Komudumuzu bitiriyoruz.
 
 module.exports.help = { //Komudumuzu kullanmamıza yarayan yerleri giriyoruz.
