@@ -97,7 +97,7 @@ client.on("guildMemberAdd", member => {
 	var channel = member.guild.channels.find("name", "giriş-çıkış");
 	if (!channel) return;
 	
-	var role = member.guild.roles.find("name", "Üye");
+	var role = member.guild.roles.find("name", "Erkek Üye");
 	if (!role) return;
 	
 	member.addRole(role); 
