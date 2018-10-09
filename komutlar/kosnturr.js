@@ -23,3 +23,4 @@ exports.help = {
   description: "Arda Özcann Konuştur la",
   usage: "konus"
 };
+
