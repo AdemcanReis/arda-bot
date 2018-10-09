@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 
 exports.run = function(client, message) {
 message.channel.bulkDelete(20);
-message.channel.send("Hop **__20__** Mesaj  Silindi  ").then(msg => {
+message.channel.send("Hop  [**__20__**]  Mesaj  Silindi  ").then(msg => {
 	msg.delete(5000)
 })
 
